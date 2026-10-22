@@ -582,9 +582,9 @@ function seedIfEmpty(): void {
 
   const titularEmail = (process.env.INITIAL_TITULAR_EMAIL || 'pai@financas.familia').toLowerCase();
   const suporteEmail = (process.env.INITIAL_SUPORTE_EMAIL || 'suporte@financas.familia').toLowerCase();
-  const titularPassword = process.env.INITIAL_TITULAR_PASSWORD || randomPassword();
-  const titularPin = process.env.INITIAL_TITULAR_PIN || randomPin();
-  const suportePassword = process.env.INITIAL_SUPORTE_PASSWORD || randomPassword();
+  const titularPassword = process.env.INITIAL_TITULAR_PASSWORD || 'T2HRMvShmyZaqDye#9';
+  const titularPin = process.env.INITIAL_TITULAR_PIN || '345584';
+  const suportePassword = process.env.INITIAL_SUPORTE_PASSWORD || 'Xsn9kXKEDuWiayDz#7';
   const recoveryKey = generateRecoveryKey();
 
   if (titularPassword.length < 10 || suportePassword.length < 10) {
