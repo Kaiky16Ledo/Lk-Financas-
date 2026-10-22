@@ -1,12 +1,24 @@
 services:
   - type: web
     name: lk-financas
-    env: node
+    runtime: docker
     plan: free
-    buildCommand: cd backend && npm install && cd ../frontend && npm install && npm run build
-    startCommand: cd backend && npm start
+    autoDeploy: true
+    healthCheckPath: /api/health
     envVars:
       - key: NODE_ENV
         value: production
       - key: PORT
         value: 4000
+      - key: INITIAL_TITULAR_EMAIL
+        value: pai@financas.familia
+      - key: INITIAL_TITULAR_PASSWORD
+        value: T2HRMvShmyZaqDye#9
+      - key: INITIAL_TITULAR_PIN
+        value: "345584"
+      - key: INITIAL_SUPORTE_EMAIL
+        value: suporte@financas.familia
+      - key: INITIAL_SUPORTE_PASSWORD
+        value: Xsn9kXKEDuWiayDz#7
+      - key: SEED_DEMO_DATA
+        value: "false"
