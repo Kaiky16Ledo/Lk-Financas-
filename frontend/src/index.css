@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Modo Alta Legibilidade (Letra Grande A+) para conforto visual do Pai no Celular e PC */
+html.font-large {
+  font-size: 18.5px;
+}
+
+html.font-normal {
+  font-size: 16px;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+}

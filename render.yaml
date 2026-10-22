@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: lk-financas
+    env: node
+    plan: free
+    buildCommand: cd backend && npm install && cd ../frontend && npm install && npm run build
+    startCommand: cd backend && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 4000

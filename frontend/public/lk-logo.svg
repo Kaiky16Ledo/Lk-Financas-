@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="lkBg" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#064E3B"/>
+      <stop offset="50%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="lkGold" x1="20" y1="15" x2="100" y2="105" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+  </defs>
+  <!-- Escudo externo arredondado -->
+  <rect x="6" y="6" width="108" height="108" rx="26" fill="url(#lkBg)" stroke="url(#lkGold)" stroke-width="4"/>
+  <!-- Moldura interna de segurança -->
+  <rect x="14" y="14" width="92" height="92" rx="20" stroke="#10B981" stroke-opacity="0.35" stroke-width="1.5"/>
+  <!-- Monograma L -->
+  <path d="M30 34H43V74H62V86H30V34Z" fill="#FFFFFF"/>
+  <!-- Monograma K entrelaçado com detalhe dourado -->
+  <path d="M60 34H73V56L90 34H105L84 59L106 86H90L73 64V86H60V34Z" fill="url(#lkGold)"/>
+</svg>

@@ -1,0 +1,18 @@
+services:
+  lk-financas:
+    build: .
+    container_name: lk-financas-vault
+    restart: unless-stopped
+    ports:
+      - "4000:4000"
+    environment:
+      - NODE_ENV=production
+      - PORT=4000
+      - JWT_SECRET=${JWT_SECRET}
+      - FRONTEND_ORIGIN=${FRONTEND_ORIGIN:-http://localhost:4000}
+      - DATA_DIR=/app/data
+    volumes:
+      - lk_vault_data:/app/data
+
+volumes:
+  lk_vault_data:

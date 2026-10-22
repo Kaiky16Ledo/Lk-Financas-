@@ -1,0 +1,25 @@
+# Dependências
+node_modules/
+**/node_modules/
+
+# Build
+dist/
+**/dist/
+
+# Variáveis de ambiente e segredos locais
+.env
+**/.env
+!.env.example
+!**/.env.example
+
+# Banco de dados local SQLite e credenciais locais de primeiro acesso
+backend/data/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*PRIMEIRO_ACESSO*
+
+# Logs e arquivos de sistema
+*.log
+.DS_Store
+Thumbs.db

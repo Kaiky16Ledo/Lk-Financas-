@@ -1,0 +1,18 @@
+{
+  "name": "LK Finanças — Cofre Pessoal Seguro",
+  "short_name": "LK Finanças",
+  "description": "Sistema de Gestão Financeira Pessoal e Patrimonial com Criptografia Zero-Knowledge AES-256-GCM",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#047857",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/lk-logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
